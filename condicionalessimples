@@ -1,0 +1,373 @@
+import os
+#BOLETA DE NOTAS
+#declaracion de variables
+nota1,nota2,nota3,nota4=0,0,0,0
+
+#INPUT
+nota1=int(os.sys.argv[1])
+nota2=int(os.sys.argv[2])
+nota3=int(os.sys.argv[3])
+nota4=int(os.sys.argv[4])
+
+#PROCESSING
+promedio_final=(nota1+nota2+nota3+nota4)/4
+
+#VERIFICADOR
+aprobar=(promedio_final>=11)
+
+#OUTPUT
+print("#####################################")
+print("#  BOLETA   DE   NOTAS  DE  FISICA  #")
+print("#####################################")
+print("  # Nota 1        :  ", nota1)
+print("  # Nota 2        :  ", nota2)
+print("  # Nota 3        :  ", nota3)
+print("  # Nota 4        :  ", nota4)
+print("  #Promedio final :  ", promedio_final)
+print("#####################################")
+
+#Condicion simple
+#SI el promedio es mayor o igual 11, mostrarle Aprobado
+if ( aprobar==True):
+    print("Curso Aprobado")
+#fin_if
+
+
+
+import os
+#BOLETA DE LA BOTICA SBCH
+#Declaracion de variables
+cliente,producto,laboratorio,cantidad,precio="","","",0,0.0
+
+#INPUT
+cliente=os.sys.argv[1]
+producto=os.sys.argv[2]
+laboratorio=os.sys.argv[3]
+cantidad=int(os.sys.argv[4])
+precio=float(os.sys.argv[5])
+
+#PROCESSING
+monto_final=(precio*cantidad)
+
+#VERIFICADOR
+puntos_bonus=(monto_final>40)
+
+#OUTPUT
+print("##############################################")
+print("#BOTICA SOCIEDAD DE BENEFICIENCIA DE CHICLAYO#")
+print("##############################################")
+print(" #  Cliente       :  ",  cliente)
+print(" #  Producto      :  ",  producto)
+print(" #  Laboratorio   :  ",  laboratorio)
+print(" #  Cantidad      :  ",  cantidad)
+print(" #  Precio        :  ",  precio, "soles")
+print(" #  Subtotal      :  ",  monto_final, "soles")
+print("##############################################")
+
+#Condicion simple
+#SI el monto final es mayor a 40, mostrarle Gano 10 puntos bonus
+if ( puntos_bonus==True):
+    print("Gano 10 puntos Bonus, que puede utilizar en su proxima compra.")
+#fin_if
+
+
+
+
+import os
+#EXCESO DE VELOCIDAD
+#Declaracion de variables
+velocidad_inicial,tiempo,aceleracion,velocidad_final=0,0,0,0
+
+#INPUT
+velocidad_inicial=float(os.sys.argv[1])
+tiempo=int(os.sys.argv[2])
+aceleracion=int(os.sys.argv[3])
+
+#PROCESSING
+velocidad_final=velocidad_inicial+(aceleracion*tiempo)
+
+#VERIFICADOR
+exceso_de_velocidad=(velocidad_final>70)
+
+#OUTPUT
+print("##############################################")
+print("#          EXCESO   DE   VELOCIDAD           #")
+print("##############################################")
+print(" #  Velocidad inicial  : ", velocidad_inicial, "m/s")
+print(" #  Tiempo             : ", tiempo, "s")
+print(" #  Aceleracion        : ", aceleracion, "m/s°")
+print(" #  Velocidad final    : ", velocidad_final, "m/s")
+print("##############################################")
+
+#Condicion simple
+#SI la velocidad es mayor a 70, mostrarle Exceso de Velocidad
+if ( exceso_de_velocidad==True):
+    print("EXCESO DE VELOCIDAD.")
+#fin_if
+
+
+
+
+
+
+
+import os
+#AREA DE UN TERRENO
+#Declaracion de variables
+largo,ancho,area=0,0,0
+
+#INPUT
+largo=int(os.sys.argv[1])
+ancho=int(os.sys.argv[2])
+
+#PROCESSING
+area=largo*ancho
+
+#VERIFICADOR
+area_para_sembrar=(area<120)
+
+#OUTPUT
+print("############################")
+print("#   AREA  DE  UN  TERRENO  #")
+print("############################")
+print(" #  Largo      :  ",  largo, "metros")
+print(" #  Ancho      :  ",  ancho, "metros")
+print(" #  Area       :  ",  area , "metros cuadrados")
+print("############################")
+
+#Condicion simple
+#SI el  area para sembrar es menor a 120, mostrarle Esta area esta adecuada para sembrar
+if ( area_para_sembrar==True):
+    print("Esta area esta adecuada para sembrar.")
+#fin_if
+
+
+
+
+
+
+
+
+
+import os
+#DIETA DE UNA PERSONA
+#Declaracion de variables
+nombre,peso_inicial,peso_final,tiempo="",0,0,0
+
+#INPUT
+nombre=os.sys.argv[1]
+peso_inicial=float(os.sys.argv[2])
+peso_final=float(os.sys.argv[3])
+tiempo=int(os.sys.argv[4])
+
+
+#PROCESSING
+reduccion_de_peso=peso_inicial-peso_final
+
+#VERIFICADOR
+peso_luego_de_la_dieta=(reduccion_de_peso<8)
+
+#OUTPUT
+print("#################################")
+print("#    DIETA  DE  UNA  PERSONA    #")
+print("#################################")
+print(" #  Nombre      :  ", nombre)
+print(" #  Peso inicial:  ", peso_inicial, "kilos")
+print(" #  Peso final  :  ", peso_final, "kilos")
+print(" #  Tiempo      :  ", tiempo, "meses")
+print(" #  Redujo      :  ", reduccion_de_peso,"kilos")
+print("#################################")
+
+#Condicion simple
+#SI el peso de la persona a reducido hasta menos de 8 kilos, mostrarle La dieta fue efectiva
+if ( peso_luego_de_la_dieta==True):
+    print("La dieta fue efectiva.")
+
+
+
+
+
+
+
+import os
+#PRESENTACION DE EJERCICIOS EN MATEMATICA BASICA
+#Declaracion de variables
+alumno,nro_de_ejercicios,puntos_por_ejercicio="",0,0
+
+#INPUT
+alumno=os.sys.argv[1]
+nro_de_ejercicios=int(os.sys.argv[2])
+puntos_por_ejercicio=int(os.sys.argv[3])
+
+#PROCESSING
+nota=(nro_de_ejercicios*puntos_por_ejercicio)
+
+#VERIFICADOR
+aprobar=(nota>=11)
+
+#OUTPUT
+print("#################################################")
+print("#PRESENTACION DE EJERCICIOS EN MATEMATICA BASICA#")
+print("#################################################")
+print(" #  Alumno                    :", alumno)
+print(" #  N° de ejercicios resueltos:", nro_de_ejercicios)
+print(" #  Puntos por ejercicio      :", puntos_por_ejercicio, "puntos")
+print(" #  Nota                      :", nota)
+print("#################################################")
+
+#Condicion simple
+#SI la nota es igual o mayor a 11 , mostrarle Aprobo Matematica Basica
+if ( aprobar==True):
+    print("Aprobo Matematica Basica.")
+#fin_if
+
+
+
+
+
+
+import os
+#PREMIO POR COMPRAS EN PLAZA VEA
+#Declaracion de variables
+cliente,producto,cantidad,precio_producto="","",0,0.0
+
+#INPUT
+cliente=os.sys.argv[1]
+producto=os.sys.argv[2]
+cantidad=int(os.sys.argv[3])
+precio_producto=float(os.sys.argv[4])
+
+#PROCESSING
+monto=(cantidad*precio_producto)
+
+#VERIFICADOR
+monto=(monto>50)
+
+#OUTPUT
+print("###################################")
+print("# PREMIO POR COMPRAS EN PLAZA VEA #")
+print("###################################")
+print(" # Cliente          :", cliente)
+print(" # Producto         :", producto)
+print(" # Precio por unidad:", precio_producto,"soles")
+print(" # Cantidad         :", cantidad,"unidades")
+print("###################################")
+
+#Condicion simple
+#SI el monto resulta mayor a 5o soles , mostrarle Gano un descuento del 50% en Hamburgesas BEMBOS
+if ( monto==True):
+    print("Gano un descuento del 50% en Hamburgesas BEMBOS.")
+#fin_if
+
+
+
+
+
+import os
+#CREACION DE CUENTA EN FACEBOOK
+#Declaracion de variables
+nombre,apellido_paterno,apellido_materno,anio_nacimiento,edad,correo,sexo,contraseña="","","",0,0,"","",""
+
+#INPUT
+nombre=os.sys.argv[1]
+apellido_paterno=os.sys.argv[2]
+apellido_materno=os.sys.argv[3]
+anio_nacimiento=int(os.sys.argv[4])
+edad=int(os.sys.argv[5])
+correo=os.sys.argv[6]
+sexo=os.sys.argv[7]
+contraseña=os.sys.argv[8]
+
+
+#VERIFICADOR
+cuenta_creada=(edad>18)
+
+#OUTPUT
+print("###################################")
+print("# CREACION DE CUENTA  EN FACEBOOK #")
+print("###################################")
+print(" # Nombre            :", nombre)
+print(" # Apellido paterno  :", apellido_paterno)
+print(" # Apellido materno  :", apellido_materno)
+print(" # Anio de nacimiento:", anio_nacimiento)
+print(" # Edad              :", edad)
+print(" # Correo            :", correo)
+print(" # Sexo              :", sexo)
+print(" # Contrasenia       :", contraseña)
+print("###################################")
+
+#Condicion simple
+#SI la persona tiene mas de 18 anios , mostrarle YA CUENTA CON CUENTA DE FACEBOOK
+if ( cuenta_creada==True):
+    print("YA CUENTA CON CUENTA DE FACEBOOK.")
+#fin_if
+
+
+
+
+
+
+
+
+
+import os
+#PREMIO POR NUMERO DE ETIQUETAS DE LECHE GLORIA
+#Declaracion de variables
+nombre,apellidos,nro_etiquetas="","",0
+
+#INPUT
+nombre=os.sys.argv[1]
+apellidos=os.sys.argv[2]
+nro_etiquetas=int(os.sys.argv[3])
+
+#VERIFICADOR
+reclamar_premio=(nro_etiquetas>10)
+
+#OUTPUT
+print("############################################")
+print("#PREMIO POR N° DE ETIQUETAS DE LECHE GLORIA#")
+print("############################################")
+print(" # Nombre        :", nombre)
+print(" # Apellidos     :", apellidos)
+print(" # N°de etiquetas:", nro_etiquetas)
+print("############################################")
+
+#Condicion simple
+#SI la persona logro juntar mas de 10 etiquetas , mostrarle RECLAMAR 3 TARROS DE LECHE GLORIA GRATIS
+if ( reclamar_premio==True):
+    print("RECLAMAR 3 TARROS DE LECHE GLORIA GRATIS.")
+#fin_if
+
+
+import os
+#CONSUMO EN UN RESTAURANT
+#Declaracion de variables
+cliente,mesero,nro_platos,precio_por_plato="","","",0
+
+#INPUT
+cliente=os.sys.argv[1]
+mesero=os.sys.argv[2]
+nro_platos=os.sys.argv[3]
+precio_por_plato=int(os.sys.argv[4])
+
+#PROCESSING
+monto_final=(precio_por_plato*nro_platos)
+
+#VERIFICADOR
+bebida_extra=(monto_final>20)
+
+#OUTPUT
+print("##############################################")
+print("#  CONSUMO  EN  UN  RESTAURANT  #")
+print("##############################################")
+print(" #  Cliente :  ",  cliente)
+print(" #  Mesero  :  ",  producto)
+print(" #  Plato   :  ",  plato)
+print(" #  Subtotal:  ",  monto_final, "soles")
+print("##############################################")
+
+#Condicion simple
+#SI el monto final es mayor a 20 soles, mostrarle Gano una Jarra de chicha extra
+if ( monto_final==True):
+    print("Gano una Jarra de chicha extra.")
+#fin_if
